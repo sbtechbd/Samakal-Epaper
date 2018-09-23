@@ -1,0 +1,953 @@
+<style type="text/css">
+  li.current_edition:hover{
+    background-color: inherit !important
+  }
+
+</style>
+
+<style type="text/css">
+  #mask {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+    display:none;
+
+  }  
+  #boxes .window {
+    position:absolute;
+    left:0;
+    top:20px;
+    width:auto;
+    height:auto;
+    display:none;
+    z-index:9999;
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  #boxes #dialog {
+    width:auto; 
+    height:auto;
+    padding:10px;
+  }
+
+
+</style>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from epaper.samakal.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Sep 2018 13:26:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102760953-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-102760953-1');
+  </script>
+
+
+  <!-- meta tag -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>The Daily eSamakal</title>
+  <meta name="Author" content="Samakal Online Team" />
+  <meta name="Developed By" content="Samakal Online Team" />
+  <meta name="Developer" content="K.B.M Mirajul Islam, Md. Maidul Islam" />
+  
+  <meta name="keywords" content="ইসমকাল, সমকাল, Esmakal, esamakal, The esamakal, the esamakal, the daily esamakal, Bangla News, Bangladesh News, Bengali News, Bangla NewsPaper, Bangladesh Newspaper, Paper, Bengali NewsPaper, Indian Newspaper, Bangla Newspaper, Online Bangla News,bangla news, bd newspaper, bangla newspaper, bangladesh newspaper, news paper, bengali newspaper, bangla news paper, bangladeshi newspaper, news paper bangladesh, daily news paper in bangladesh, daily newspapers of bangladesh, daily newspaper, daily newspaper, current news, current news, bengali daily newspaper, daily news,portal, portal, bangla, bangla, news, news, bangladesh, bangladesh, bangladeshi, bangladeshi, bengali, culture, portal site, dhaka, textile, garments, micro credit, bangladesh news,dhaka news, world news, national news, bangladesh media, betar, current news,sports, bangladesh sports, bangladesh, bangladesh politics, bangladesh business,
+  bangla news, bengali news, banglanews, bangla khobor, bangla potrika, bangla, bengali, dhaka, news, reviews, opinion and feature stories. Find also entertainment, business, science, technology, sports, movies, travel, jobs, education, health, environment, human-rights news and more" />
+
+
+  <meta http-equiv="Cache-Control" content="no-cache"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta name="distribution" content="Global">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Language" content="bn"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!--[if IE]><link href="css/ie.css" rel="stylesheet" type="text/css" /><![endif]--> 
+  <!--[if IE 6]><script src="js/ie6PngFix.js"></script><![endif]--> 
+
+  <meta property="og:title" content="The Daily eSamakal" />
+  <meta property="og:url" content="http://epaper.samakal.com" />
+
+    <meta property="og:image" content="http://epaper.samakal.com/../uploads/epaper/2018/09/21/pages/page5ba3f9789c25a.jpg" />
+
+  <link rel="image_src" href="uploads/epaper/2018/09/21/pages/page5ba3f9789c25a.jpg" />
+    
+
+  <!-- <meta property="og:image:secure_url" content="http://www.esamakal.net/2017/03/05/thumb/page01.jpg" /> -->
+  <meta property="og:image:type" content="image/jpeg" />
+  <!-- <meta property="og:image:width" content="85" /> -->
+  <!-- <meta property="og:image:height" content="120" /> -->
+  <meta name="description" content="eSamakal, The Most Read Bangla Newspaper, Brings You Samakal Epaper on Online." />
+  <!-- end meta tag -->
+  
+  
+  <!-- icon -->
+  <link rel="icon" type="image/png" href="assets/images/icon.png" />
+  <!-- font awesome css -->
+  <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css" />
+  <!-- page serial pagination css -->
+  <link rel="stylesheet" href="assets/css/pagination.css" media="screen" />
+  <!-- main css -->
+  <link rel="stylesheet" href="assets/css/mainf9e3.css?v=1.1" />
+  <!-- fonts -->
+  <link rel="stylesheet" href="assets/fonts/styles.css" />
+
+
+  <!-- jquery js -->
+  <script src="assets/js/jquery-3.1.1.min.js"></script>
+  <!-- date dropdown js -->
+  <script src="assets/js/jquery.date-dropdowns.js"></script>
+  <!-- maplight js -->
+  <script src="assets/js/jquery.maphilight.min.js"></script>
+
+
+  <!-- custom js -->
+  <script>
+    $(function() {
+      $("#datepick").dateDropdowns({required: true});
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(function () {
+      $('.map').maphilight();
+    });
+  </script>
+  <!-- main js -->
+  <script type="text/javascript" src="assets/js/main.js"></script>
+
+</head>
+
+<body id="body">
+  <div class="main-container">
+    <div class="header-div">
+     <div class="header-div">
+
+       <!-- header top -->
+       <div class="top-header" style="height: 33px">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td>
+              <div class="social-icon" >
+                <ul class="list-unstyled" style="height: 32px;margin-left: 0;padding-left: 0">
+                  <li class="fb btn" ><a href="https://www.facebook.com/TheDailySamakal" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  </li>
+                  <li class="twit btn"><a href="https://twitter.com/samakaltw" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  </li>
+                  <li class="gplus btn"><a href="https://plus.google.com/104228101294489335033" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </td>
+            <td>
+              <div class="date pull-right" style="margin-top: 2px"> 
+                <a href="http://samakal.com/" target="_blank" style="color: white;text-decoration: none;background-color: #af601a;padding: 3px 6px 3px 6px">অনলাইন বাংলা &nbsp;<i class="fa fa-external-link-square" style="font-size: 14px"></i></a> 
+                <a href="http://en.samakal.com/" target="_blank" style="color: white;text-decoration: none;background-color: #f5b041;padding: 3px 6px 3px 6px;">Online English &nbsp;<i class="fa fa-external-link-square" style="font-size: 14px;padding-right: 6px"></i></a>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- header top end -->
+
+
+      <!-- epaper_header_top_ad -->
+                  <!-- end epaper_header_top_ad -->
+
+
+      <!-- news-headline -->
+                  <div class="news-headline">
+        <table cellspacing="0" width="100%">
+          <tr >
+            <td class="sironam" ><span>শিরোনাম</span>
+            </td>
+            <td>
+              <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" class="headline" scrollamount="2" >
+                <ul class="list-unstyled sironam-list">
+                                    <li style="margin-right:20px"><i class="fa fa-circle" aria-hidden="true"></i><a href="http://samakal.com/bangladesh/article/18091251/আগে-সিনহা-অপপ্রচারে-উসকানি-না-দিলেও-পারতেন-কাদের" class="headline-link" target="_blank">নির্বাচনের আগে সিনহা অপপ্রচারে উসকানি না দিলেও পারতেন: কাদের</a></li>
+                                    <li style="margin-right:20px"><i class="fa fa-circle" aria-hidden="true"></i><a href="http://samakal.com/whole-country/article/18091242/বিদ্যুতের-তার-ছিঁড়ে-পড়ে-৪-জনের-মৃত্যু" class="headline-link" target="_blank">অটোরিকশায় বিদ্যুতের তার ছিঁড়ে পড়ে ৪ জনের মৃত্যু</a></li>
+                                    <li style="margin-right:20px"><i class="fa fa-circle" aria-hidden="true"></i><a href="http://samakal.com/whole-country/article/18091240/কর্মী-হত্যায়-ইউপিডিএফ-দুষছে-সংস্কারবাদী-জেএসএসকে" class="headline-link" target="_blank">২ কর্মী হত্যায় ইউপিডিএফ দুষছে সংস্কারবাদী জেএসএসকে</a></li>
+                                    <li style="margin-right:20px"><i class="fa fa-circle" aria-hidden="true"></i><a href="http://samakal.com/international/article/18091233/ফেরি-ডুবে-৪৪-জনের-মৃত্যু" class="headline-link" target="_blank">তানজানিয়ায় ফেরি ডুবে নিহত শতাধিক</a></li>
+                                    <li style="margin-right:20px"><i class="fa fa-circle" aria-hidden="true"></i><a href="http://samakal.com/bangladesh/article/18091230/অধিবেশনে-যোগ-দিতে-নিউইয়র্কের-পথে-প্রধানমন্ত্রী" class="headline-link" target="_blank">জাতিসংঘ অধিবেশনে যোগ দিতে নিউইয়র্কের পথে প্রধানমন্ত্রী</a></li>
+                                    <li style="margin-right:20px"><i class="fa fa-circle" aria-hidden="true"></i><a href="http://samakal.com/whole-country/article/18091229/ইউপিডিএফের-২-কর্মীকে-গুলি-করে-হত্যা" class="headline-link" target="_blank">রাঙামাটিতে ইউপিডিএফের ২ কর্মীকে গুলি করে হত্যা</a></li>
+                                    <li style="margin-right:20px"><i class="fa fa-circle" aria-hidden="true"></i><a href="http://samakal.com/whole-country/article/18091237/থেমে-থাকা-ট্রাকে-শ্যামলীর-বাসের-ধাক্কা-নিহত-৩" class="headline-link" target="_blank">পুঠিয়ায় থেমে থাকা ট্রাকে শ্যামলীর বাসের ধাক্কা, নিহত ৩</a></li>
+                                    <li style="margin-right:20px"><i class="fa fa-circle" aria-hidden="true"></i><a href="http://samakal.com/bangladesh/article/18091221/প্রতি-৫-সেকেন্ডে-১৫-বছরের-কমবয়সী-একটি-শিশু-মারা-যায়" class="headline-link" target="_blank">বিশ্বে প্রতি ৫ সেকেন্ডে ১ শিশুর মৃত্যু: জাতিসংঘ</a></li>
+                                    <li style="margin-right:20px"><i class="fa fa-circle" aria-hidden="true"></i><a href="http://samakal.com/bangladesh/article/18091205/সংকট-সমাধানে-জাতিসংঘে-সুনির্দিষ্ট-প্রস্তাব-দেবেন-প্রধানমন্ত্রী" class="headline-link" target="_blank">রোহিঙ্গা সংকট সমাধানে জাতিসংঘে সুনির্দিষ্ট প্রস্তাব দেবেন প্রধানমন্ত্রী</a></li>
+                                    <li style="margin-right:20px"><i class="fa fa-circle" aria-hidden="true"></i><a href="http://samakal.com/whole-country/article/18091192/নির্বাচনে-ইভিএমের-পক্ষে-নয়-জাতীয়-পার্টি-এরশাদ" class="headline-link" target="_blank">আগামী নির্বাচনে ইভিএমের পক্ষে নয় জাতীয় পার্টি: এরশাদ</a></li>
+                                    <li style="margin-right:20px"><i class="fa fa-circle" aria-hidden="true"></i><a href="http://samakal.com/capital/article/18091188/বাধায়-পণ্ড-বাম-জোটের-ইসি-ঘেরাওয়ের-কর্মসূচি" class="headline-link" target="_blank">পুলিশের লাঠিপেটায় পণ্ড বাম জোটের ইসি ঘেরাও কর্মসূচি</a></li>
+                                    <li style="margin-right:20px"><i class="fa fa-circle" aria-hidden="true"></i><a href="http://samakal.com/bangladesh/article/18091187/৫-জেলার-বিশেষ-ব্যবস্থায়-লেখাপড়া-চালিয়ে-নেওয়ার-নির্দেশ" class="headline-link" target="_blank">বন্যাকবলিত ৫ জেলায় বিশেষ ব্যবস্থায় লেখাপড়া চালিয়ে নেওয়ার নির্দেশ</a></li>
+                                  </ul>
+              </marquee>
+            </td>
+          </tr>
+        </table>
+      </div>
+            <!-- end news-headline -->
+    </div> 
+
+
+    <div class="row-div">
+      <!-- main content -->
+      <div>
+       
+
+<!-- header -->
+<div class="navigation">
+  <table>
+    <tr>
+      <td>
+        <nav id="primary_nav_wrap" class="navigation-left">
+          <ul>
+            <li><a href="javascript:void(0)"><img src="assets/images/front/today.png"></a>
+              <ul class="dp-menu shadow" >
+                                                                <li ><a href="nogor-edition/2018-09-21/10.html">খেলাধুলা</a></li>
+                                                                                                <li ><a href="nogor-edition/2018-09-21/21.html">কালের খেয়া</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li ><a href="nogor-edition/2018-09-21/1.html">প্রথম পাতা</a></li>
+                                                                <li ><a href="nogor-edition/2018-09-21/2.html">খবর</a></li>
+                                                                <li ><a href="nogor-edition/2018-09-21/3.html">ভোট আসছে</a></li>
+                                                                                                                                <li ><a href="nogor-edition/2018-09-21/18.html">আন্তর্জাতিক</a></li>
+                                                                                                                                                                <li ><a href="nogor-edition/2018-09-21/7.html">লোকালয়</a></li>
+                                                                <li ><a href="nogor-edition/2018-09-21/8.html">মন্তব্য</a></li>
+                                                                <li ><a href="nogor-edition/2018-09-21/9.html">মুক্তমঞ্চ</a></li>
+                                                                <li ><a href="nogor-edition/2018-09-21/12.html">শিল্প বাণিজ্য</a></li>
+                                                                                                <li ><a href="nogor-edition/2018-09-21/14.html">আনন্দ প্রতিদিন</a></li>
+                                                                                                <li ><a href="nogor-edition/2018-09-21/16.html">পাঠশালা</a></li>
+                                                                <li ><a href="nogor-edition/2018-09-21/20.html">শেষের পাতা</a></li>
+                                                              </ul>
+            </li>
+
+            <li class="current_edition" style="width: 80px;text-align: right;margin-right: 10px; margin-top: 0px; font-size: 22px;">নগর</li>
+            <li> <a href="javascript:void(0)"><img src="assets/images/front/updated.png" ></a>
+              <ul class="dp-menu shadow">
+                                                <li style="width: 119px"><a href="nogor-edition/2018-09-21/1.html">নগর</a></li>
+                                <li style="width: 119px"><a href="dhaka-division/2018-09-21/1.html">ঢাকা বিভাগ</a></li>
+                                <li style="width: 119px"><a href="upakan%e1%b9%adha-editio/2018-09-21/1.html">উপকন্ঠ</a></li>
+                                <li style="width: 119px"><a href="southern-edition/2018-09-21/1.html">দক্ষিণাঞ্চল</a></li>
+                                <li style="width: 119px"><a href="northern-edition/2018-09-21/1.html">উত্তরাঞ্চল</a></li>
+                                <li style="width: 119px"><a href="sylhet-edition/2018-09-21/1.html">সিলেট</a></li>
+                                <li style="width: 119px"><a href="chittagong-edition/2018-09-21/1.html">চট্টগ্রাম</a></li>
+                                              </ul>
+            </li>
+            <li> 
+                            <a href="all/pages/nogor-edition/2018-09-21.html"><img src="assets/images/front/all1.png" ></a>
+              
+
+            </li>
+
+                        <li>
+              <a href="javascript::void(0)" onclick='printPage("uploads/epaper/2018/09/21/pages/page5ba3f9789c25a.jpg");'><img src="assets/images/front/print.png"></a>
+            </li>
+            
+          </ul>
+        </nav>
+      </td>
+
+      <td>
+        <nav class="navigation-right">
+         <div class="log">
+          <a style="text-decoration:none;" href="index.html"> <img src="assets/images/logo.png" height="25px" style="padding-top: 3px;">
+          </a>
+                    <p style="font-size: 14px">শুক্রবার, ২১ সেপ্টেম্বার ২০১৮</p>
+          <input type="hidden" id="bangla_date" name="bangla_date" value="শুক্রবার, ২১ সেপ্টেম্বার ২০১৮">
+        </div>
+      </nav>
+    </td>
+  </tr>
+</table>
+</div>
+<!-- end header -->
+
+
+<!-- content -->
+<div class="row-div-left">
+
+    <div class="pagination" style="width: 100%;margin-top: 12px;padding: 0px;margin-bottom: 11px">
+    <div id="demo" style="padding: 0px;margin: 0px"></div>
+  </div>
+    
+
+  <div class="left-content">
+
+    <div class="main-img-div">
+            <img src="uploads/epaper/2018/09/21/pages/page5ba3f9789c25a.jpg" usemap="#enewspaper" class="map" />
+
+      <map name="enewspaper" >
+        
+                
+        
+        <area  shape="rect" coords="18.9,181.55323998697,104.3,531.66720937805" data-image="page5ba3f9789c25a-5ba3f9cf95284.jpg"  class="main-img"  onclick="modalOpen('page5ba3f9789c25a-5ba3f9cf95284.html','uploads/epaper/2018/09/21/images/index.html','page5ba3f98291621-5ba3faf6ce307.jpg','244')"/>
+        
+        
+        <area  shape="rect" coords="103.95,184.97232171931,433.65,533.03484207099" data-image="page5ba3f9789c25a-5ba3f9de94e62.jpg"  class="main-img"  onclick="modalOpen('page5ba3f9789c25a-5ba3f9de94e62.html','uploads/epaper/2018/09/21/images/index.html','page5ba3f996ae456-5ba3fed551c46.html','942')"/>
+        
+        
+        <area  shape="rect" coords="432.6,187.02377075871,514.5,451.66069684142" data-image="page5ba3f9789c25a-5ba3f9ea9ee3c.jpg"  class="main-img"  onclick="modalOpen('page5ba3f9789c25a-5ba3f9ea9ee3c.html','uploads/epaper/2018/09/21/images/index.html','page5ba3f98d9b04f-5ba3ff1173127.html','234')"/>
+        
+        
+        <area  shape="rect" coords="519.05,187.70758710518,673.75,479.0133507001" data-image="page5ba3f9789c25a-5ba3f9f3f0c86.jpg"  class="main-img"  onclick="modalOpen('page5ba3f9789c25a-5ba3f9f3f0c86.html','uploads/epaper/2018/09/21/images/index.html','page5ba3f98d9b04f-5ba400a746351.html','442')"/>
+        
+        
+        <area  shape="rect" coords="20.65,662.27613155324,105.35,810.66427873657" data-image="page5ba3f9789c25a-5ba3fa0024e94.jpg"  class="main-img"  onclick="modalOpen('page5ba3f9789c25a-5ba3fa0024e94.html','uploads/epaper/2018/09/21/images/index.html','page5ba3f98291621-5ba3fad81f07d.html','242')"/>
+        
+        
+        <area  shape="rect" coords="103.25,661.59231520677,268.45,759.37805275155" data-image="page5ba3f9789c25a-5ba3fa0c5ec96.jpg"  class="main-img"  onclick="modalOpen('page5ba3f9789c25a-5ba3fa0c5ec96.html','uploads/epaper/2018/09/21/images/index.html','page5ba3f98d9b04f-5ba400bd16308.html','472')"/>
+        
+        
+        <area  shape="rect" coords="268.1,532.35102572452,350.7,759.37805275155" data-image="page5ba3f9789c25a-5ba3fa18d1a1f.jpg"  class="main-img"  onclick="modalOpen('page5ba3f9789c25a-5ba3fa18d1a1f.html','uploads/epaper/2018/09/21/images/index.html','page5ba3f98291621-5ba3fb811d168.html','236')"/>
+        
+        
+        <area  shape="rect" coords="267.4,759.37805275155,350.7,921.44252686421" data-image="page5ba3f9789c25a-5ba3fa2421bcb.jpg"  class="main-img"  onclick="modalOpen('page5ba3f9789c25a-5ba3fa2421bcb.html','uploads/epaper/2018/09/21/images/index.html','page5ba3f996ae456-5ba3fff702f49.html','238')"/>
+        
+        
+        <area  shape="rect" coords="22.05,10.257245197004,677.25,181.89514816021" data-image="page5ba3f9789c25a-5ba3fa2b7c433.jpg"  class="main-img"  onclick="modalOpen('page5ba3f9789c25a-5ba3fa2b7c433.html','uploads/epaper/2018/09/21/images/index.html','','1872')"/>
+        
+        
+        <area  shape="rect" coords="433.3,450.63497232172,513.1,532.00911755129" data-image="page5ba3f9789c25a-5ba3fa34a7bf9.jpg"  class="main-img"  onclick="modalOpen('page5ba3f9789c25a-5ba3fa34a7bf9.html','uploads/epaper/2018/09/21/images/index.html','','228')"/>
+        
+        
+        <area  shape="rect" coords="22.75,532.35102572452,268.45,662.27613155324" data-image="page5ba3f9789c25a-5ba3fa3d882e9.jpg"  class="main-img"  onclick="modalOpen('page5ba3f9789c25a-5ba3fa3d882e9.html','uploads/epaper/2018/09/21/images/index.html','','702')"/>
+        
+        
+        <area  shape="rect" coords="21,811.34809508303,268.1,1030.1693259525" data-image="page5ba3f9789c25a-5ba3fa485441a.jpg"  class="main-img"  onclick="modalOpen('page5ba3f9789c25a-5ba3fa485441a.html','uploads/epaper/2018/09/21/images/index.html','','706')"/>
+        
+        
+        <area  shape="rect" coords="269.15,920.75871051775,349.65,1029.485509606" data-image="page5ba3f9789c25a-5ba3fa4ded4a3.jpg"  class="main-img"  onclick="modalOpen('page5ba3f9789c25a-5ba3fa4ded4a3.html','uploads/epaper/2018/09/21/images/index.html','','230')"/>
+                      </map>
+          </div>  
+
+    <table width="93%" class="page-trigger">
+      <tr>
+        <td>
+                    <a style="float: left" href="all/pages/nogor-edition/2018-09-21.html" style="padding: 8px"><img src="assets/images/front/all.png" /></a>
+                  </td>
+        <td>
+                    <a href="nogor-edition/2018-09-21/2.html" class="pull-right"><img src="assets/images/front/next.png" /></a>
+                  </td>
+      </tr>
+    </table>
+    <br>
+
+  </div>
+</div>
+<!-- end content -->
+
+
+
+
+<!-- The Modal -->
+<div id="newsPopup" class="modal">
+  <div class="modal-content customized_content loading_img" id="modal-content">
+    <div class="modal-head" >
+      <table width="100%" class="modal_table">
+        <tr>
+          <td>
+            <div class="add-this">
+            </div>
+          </td>
+          <td> 
+            <div class="pull-left">
+              <p>
+                <img src="assets/images/logo.png" height="20px" style="margin-top: 3px" >
+              </p>
+            </div>
+            
+            <div class="pull-right">
+              <p>
+                <!-- <button type="button" onclick='printDiv("শুক্রবার, ২১ সেপ্টেম্বার ২০১৮");'  name="b_print" class="btn btn-success ipt" style="margin-top: 2px;" title="print"> Print</button> -->
+
+                <button class="btn btn-danger close" style="padding: 6px 10px 6px 10px;margin-top: 2px"  title="close"><i class="fa fa-times"></i></button>
+              </p>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+            
+    </div>
+
+    <div class="modal-body text-center" style="padding: 20px;">
+      <div class="modal-main-img" id="newsImg" style="overflow-x: auto;">
+
+        <center>
+          <img src="#" class="image_view" style="border: 2px solid #CCC;" alt="epaper.samakal.com" />
+          <img src="#" class="related_image" style="border: 2px solid #CCC;display: none" alt="epaper.samakal.com" />
+        </center>
+
+      </div>
+
+      <div style="margin-top: 20px;margin-right:auto;">
+
+        <div style="float: left;">
+          <span style="color:#E18719;">Share <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>&nbsp;
+          
+
+          <button type="button" style="background-color: #3C5A98"  class="btn btn-default share_on_fb"><i class="fa fa-facebook" style="color: white" aria-hidden="true"></i></button>
+
+          <button type="button" style="background-color: #1DA1F2"  class="btn btn-default share_on_twt"><i class="fa fa-twitter" style="color: white" aria-hidden="true"></i></button>
+
+          <button type="button"  class="btn btn-default share_on_gplus" style="background-color: #E53935"><i class="fa fa-google" style="color: white" aria-hidden="true"></i></button>
+
+          <button type="button" onclick='printDiv("শুক্রবার, ২১ সেপ্টেম্বার ২০১৮");'  name="b_print" class="btn btn-success"> <i class="fa fa-print"></i></button>
+
+        </div>
+
+        <div style="float: right">
+          <button  class="btn btn-info trigger-prev prvs" style="display: none"><i class="fa fa-backward" aria-hidden="true"></i>&nbsp;&nbsp;পূর্ববর্তী অংশ</button>
+          <button class="btn btn-info trigger-next nxt" style="display: none">পরবর্তী অংশ&nbsp;&nbsp;<i class="fa fa-forward" aria-hidden="true"></i></button> 
+        </div>
+      </div>
+      <br/>
+    </div>
+
+    <div class="modal-footer" >
+            
+      <div class="footer text-center" >
+        <p style="border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;">© eSamakal 2017. All Rights Reserved.  
+        </p>
+      </div>
+    </div> 
+  </div>
+</div>
+<!--modal end-->
+
+
+<input type="hidden" class="get_pagination" value="52">
+<input type="hidden" class="current_date" value="2018-09-21">
+
+
+
+<!-- js for the page -->
+<script type="text/javascript">
+
+  /*==Get the modal==*/
+  var modal = document.getElementById('newsPopup');
+  var body = document.getElementById('body');
+
+
+  /*==Get the button that opens the modal==*/
+  var btn = document.getElementById("myBtn");
+
+
+  /*==Get the <span> element that closes the modal==*/
+  var button = document.getElementsByClassName("close")[0];
+
+
+  /*################################
+  ## click on modal (x) close ##
+  #################################*/
+  button.onclick = function() {
+   /*==remove related image class==*/
+   var remove_image_item = document.getElementsByClassName("image_view")[0].innerHTML = "";
+   $(".modal-body .image_view").attr( "src", remove_image_item );
+   
+   var remove_related_item = document.getElementsByClassName("related_image")[0].innerHTML = "";
+   $(".modal-body .related_image").attr( "src", remove_related_item );
+
+   modal.style.display = "none";
+   document.getElementById("body").style.overflow = 'scroll';
+ }
+
+
+  /*##################################
+  ## click on outside modal close ##
+  ###################################*/
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      /*==remove related image class==*/
+      var remove_image_item = document.getElementsByClassName("image_view")[0].innerHTML = "";
+      $(".modal-body .image_view").attr( "src", remove_image_item );
+
+      var remove_related_item = document.getElementsByClassName("related_image")[0].innerHTML = "";
+      $(".modal-body .related_image").attr( "src", remove_related_item );
+
+
+      $('.image_view').show();
+      modal.style.display = "none";
+      $('.nxt').hide();
+      $('.prvs').hide();
+      document.getElementById("body").style.overflow = 'scroll';
+    }
+  }
+
+
+  /*##################################
+  ## modal open ##
+  ###################################*/
+  function modalOpen(image,image_location,related_item,image_width){
+
+    $('#newsPopup').fadeIn(100); 
+    modal.style.display = "block";
+
+    /*==modal width set==*/
+    var modal_width = image_width;
+    if(modal_width>1050){
+      modal_width=1050;
+    }
+
+    if(modal_width<750){
+      modal_width=750;
+    }
+
+    document.getElementById("modal-content").style.width = modal_width+'px';
+
+    $('.related_image').hide();
+
+    var image = image_location + image;
+    $(".modal-body .image_view").attr( "src", image );
+
+
+    /*==next prev button==*/
+    if(related_item != ''){
+      var related_image = image_location + related_item;
+      $(".modal-body .related_image").attr( "src", related_image );
+      $('.nxt').show();
+      $('.prvs').hide();
+    }
+
+  }
+
+
+
+  /*##################################
+  ## click on next button ##
+  ###################################*/
+  $(".nxt").click(function(){
+    $('.image_view').hide();
+    $('.prvs').show();
+    $('.nxt').hide();
+    $('.related_image').show();
+
+    var modal_width = $('.related_image').width();
+    if(modal_width>1050){
+      modal_width=1050;
+    }
+    if(modal_width<750){
+      modal_width=750;
+    }
+    document.getElementById("modal-content").style.width = modal_width+'px';
+  });
+
+
+
+  /*##################################
+  ## click on previous ##
+  ###################################*/
+  $(".prvs").click(function(){
+    $('.image_view').show();
+    $('.prvs').hide();
+    $('.nxt').show();
+    $('.related_image').hide();
+
+    var modal_width = $('.image_view').width();
+    if(modal_width>1050){
+      modal_width=1050;
+    }
+    if(modal_width<750){
+      modal_width=750;
+    }
+    document.getElementById("modal-content").style.width = modal_width+'px';
+  });
+
+
+  /*##################################
+  ## click on close button ##
+  ###################################*/
+  $(".close").click(function(){
+    $('.nxt').hide();
+    $('.prvs').hide();
+    $('.image_view').show();
+  });
+
+</script>
+<!--end js for modal-->
+
+
+
+<!--pagination-->
+<script src="assets/js/jquery.paginate.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function() {
+
+    var total_pages = $('.get_pagination').val();
+
+    var display_pages =total_pages;
+
+    if(total_pages > 24){
+      display_pages = 23;
+    }
+
+    $("#demo").paginate({
+      count     : total_pages,
+      start     : 1,
+      display     : display_pages,
+      border          : false,
+      text_color        : '#888',
+      background_color      : '#EEE', 
+      text_hover_color      : 'black',
+      background_hover_color  : '#CFCFCF'
+    });
+  });
+
+  function getPage(page){
+
+    var current_date = $('.current_date').val();
+    var site_url = $('.site_url').val();
+
+    $('.current_page').val(page);
+
+    var request_url = site_url+'/nogor-edition/'+current_date+'/'+page;
+    window.location=request_url;
+  }
+
+</script>
+<!--pagination end-->
+
+
+
+<!-- article print-->
+<script type="text/javascript">
+  function printDiv(bangla_date) 
+  {
+    var newWin=window.open('','Print-Window');
+
+    var site_url = $(".site_url").val();
+
+    var main_image_link = $(".image_view").attr( "src" );
+    var main_image = site_url+'/'+main_image_link;
+
+    var related_image_link = $(".related_image").attr( "src" );
+    var related_image = site_url+'/'+related_image_link;
+
+    newWin.document.open();
+
+    if(related_image_link != ''){
+      newWin.document.write('<html><body onload="window.print()">'+'<center><img src="http://epaper.samakal.com/assets/images/samakal_logo_black.png" style="height:40px;width:200px;" />'+'<p style="text-align:center;border-top:1px solid black;border-bottom:1px solid black;padding:5px;font-size:20px">'+bangla_date+'</p>'+'<img src='+main_image+' />'+'</center></body>'+'<body><center>'+'<img src='+related_image+' />'+'</center></body>'+'</html>');
+    }else{
+     newWin.document.write('<html><body onload="window.print()">'+'<center><img src="http://epaper.samakal.com/assets/images/samakal_logo_black.png" style="height:40px;width:200px;" />'+'<p style="text-align:center;border-top:1px solid black;border-bottom:1px solid black;padding:5px;font-size:20px">'+bangla_date+'</p>'+'<img src='+main_image+' />'+'</center></body></html>');
+   }
+
+   newWin.document.close();
+   setTimeout(function(){newWin.close();},10);
+
+ }
+</script>
+
+
+<!-- share apis -->
+<script async src="../platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script type="text/javascript">
+  $('.share_on_fb').click(function(){
+
+    var fb_link = '/'+$(".image_view").attr( "src" );
+    var related_image = $(".related_image").attr( "src" );
+    var site_url = $(".site_url").val();
+    var current_date = $(".current_date").val();
+
+    if(related_image != ''){
+      var splited = related_image.split("index.html");
+      var length = splited.length;
+      var related_image = splited[length-1];
+
+      window.open('https://www.facebook.com/sharer/sharer.php?u='+site_url+'/epaper'+fb_link+'?related='+related_image, '', 'window settings');
+    }else{
+      window.open('https://www.facebook.com/sharer/sharer.php?u='+site_url+'/epaper'+fb_link, '', 'window settings');
+    }
+    
+  });
+
+  $('.share_on_twt').click(function(){
+    var twt_link = '/'+$(".image_view").attr( "src" );
+    var related_image = $(".related_image").attr( "src" );
+    var site_url = $(".site_url").val();
+    var current_date = $(".current_date").val();
+
+    if(related_image != ''){
+      var splited = related_image.split("index.html");
+      var length = splited.length;
+      var related_image = splited[length-1];
+
+      window.open('https://www.twitter.com/share?text=eSamakal-'+current_date+'&url='+site_url+'/epaper'+twt_link+'?related='+related_image, '', 'window settings');
+    }else{
+      window.open('https://www.twitter.com/share?text=eSamakal-'+current_date+'&url='+site_url+'/epaper'+twt_link, '', 'window settings');
+    }
+    
+  });
+
+
+  $('.share_on_gplus').click(function(){
+    var gp_link = $(".image_view").attr( "src" );
+    var related_image = $(".related_image").attr( "src" );
+    var site_url = $(".site_url").val();
+    var current_date = $(".current_date").val();
+
+    var url_link = gp_link.split('..').join('');
+
+    if(related_image != ''){
+      var splited = related_image.split("index.html");
+      var length = splited.length;
+      var related_image = splited[length-1];
+
+      window.open('https://plus.google.com/share?text=eSamakal-'+current_date+'&url='+site_url+url_link+'?related='+related_image, '', 'window settings');
+    }else{
+
+      window.open('https://plus.google.com/share?text=eSamakal-'+current_date+'&url='+site_url+url_link, '', 'window settings');
+    }
+    
+  });
+
+
+  function printPage(printPage) 
+  {
+
+    var newWinPage=window.open('','Print-Window');
+
+    newWinPage.document.open();
+
+    newWinPage.document.write('<html><body onload="window.print()">'+'<center>'+'<img src='+printPage+' />'+'</center></body></html>');
+
+    newWinPage.document.close();
+    setTimeout(function(){newWinPage.close();},10);
+  }
+
+</script>
+<!-- end share apis -->
+
+     </div>
+     <!-- end main content -->
+
+     <!-- search result not found messages -->
+          <!-- end search result not found messages -->
+
+
+     <div class="row-div-right">
+
+      <!-- archive search -->
+      <div class="old-paper" style="background-color: #EBEBEB">
+        <div class="wrapper">
+          <center>
+           <table style="padding-bottom: 2px" style="width: 100%">
+            <tr>
+             <td style="text-align: center;"> 
+               <div id="datepick" style="height: 27px; padding: 0; margin: 0">
+                 <span style="background-color: #887474; padding: 3px;color: white">পুরনো সংখ্যা</span>
+               </div>
+             </td>
+             <td>
+              <button type="button" style="height: 24px;margin-top: 3px;font-size:14px; border: 1px solid #a4a4a4;background: background: linear-gradient(#f6f6f6,#dedede);line-height: 10px" class="get_archive"> সার্চ </button>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </div>
+  </div>
+  <!-- end archive search -->
+
+
+  <div class="right-content" style="margin-top: 10px">
+
+                
+
+    <!-- sidebar as 1 -->
+            <div class="add text-center" style="margin-top: 10px">
+     <script type='text/javascript'><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://adoptserver.com/adopt/ads/optimization/ajs.php':'http://adoptserver.com/adopt/ads/optimization/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=95");
+   document.write ('&cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&exclude=" + document.MAX_used);
+   document.write (document.charset ? '&charset='+document.charset : (document.characterSet ? '&charset='+document.characterSet : ''));
+   document.write ("&loc=" + escape(window.location));
+   if (document.referrer) document.write ("&referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a href='http://adoptserver.com/adopt/ads/optimization/click.php?n=ad4e5f2b&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://adoptserver.com/adopt/ads/optimization/avw.php?zoneid=95&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=ad4e5f2b' border='0' alt='' /></a></noscript>   </div>
+      <!-- end sidebar as 1 -->
+
+    <hr style="margin-top: 10px;border-style:dashed;">
+    
+    <!-- facebook page -->
+    <div class="add text-center">
+      <div class="fb-page"
+      data-href="https://www.facebook.com/TheDailySamakal/" data-width="340" data-hide-cover="false" data-show-facepile="true"></div>
+      <div id="fb-root"></div>
+    </div>
+    <!-- end facebook page -->
+
+
+   <!-- sidebar as 2 -->
+         <!-- end sidebar as 2 -->
+
+   <!-- sidebar as 3 -->
+         <!-- end sidebar as 3 -->
+
+
+   
+   <div class="samakal-content-div" style="margin-top: 20px;margin-bottom: 7px">
+
+    <div class="samakal-label">
+      <p style="padding: 5px 5px; margin-bottom: 2px; margin-top:0px; font-size: 22px;text-align: center;"><a href="http://samakal.com/" target="_blank" style="text-decoration: none;color: white">সমকাল অনলাইন থেকে</a></p>
+    </div>
+    <div class="samakal-content" style="margin-top: 5px">
+
+      <div class="tab" style="width: 336px;border-top: 4px solid #E18719">
+        <a style="width: 20%;" href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openCity(event, 'latest_news')">সর্বশেষ</a>
+        <a style="width: 40%" href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'most_viewed')">সর্বাধিক পঠিত</a>
+        <a style="width: 40%" href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'editors_choice')">সম্পাদকের বাছাই</a>
+      </div>
+
+      <div id="latest_news" class="tabcontent samakal_nonline">
+       <ul>
+                           <li><div class="text_align_left"><a href="http://samakal.com/sports/article/18091253/বিপক্ষে-ব্যাট-করছে-আফগানিস্তান" class="headline-link" target="_blank">পাকিস্তানের বিপক্ষে ব্যাট করছে আফগানিস্তান</a></div></li>
+                  <li><div class="text_align_left"><a href="http://samakal.com/sports/article/18091252/জাতির-টুর্নামেন্টে-দর্শক-মেসি" class="headline-link" target="_blank">চার জাতির টুর্নামেন্টে দর্শক মেসি</a></div></li>
+                  <li><div class="text_align_left"><a href="http://samakal.com/bangladesh/article/18091251/আগে-সিনহা-অপপ্রচারে-উসকানি-না-দিলেও-পারতেন-কাদের" class="headline-link" target="_blank">নির্বাচনের আগে সিনহা অপপ্রচারে উসকানি না দিলেও পারতেন: কাদের</a></div></li>
+                  <li><div class="text_align_left"><a href="http://samakal.com/sports/article/18091250/হেরে-ব্যাটিংয়ে-বাংলাদেশ" class="headline-link" target="_blank">দ্রুত পাঁচ উইকেট হারিয়ে চাপে বাংলাদেশ</a></div></li>
+                  <li><div class="text_align_left"><a href="http://samakal.com/bangladesh/article/18091249/বিষয়ক-বইমেলা-উদ্বোধন" class="headline-link" target="_blank">নদী বিষয়ক বইমেলা উদ্বোধন</a></div></li>
+                  <li><div class="text_align_left"><a href="http://samakal.com/sports/article/18091248/দুবাইয়ে-উতপ্ত-ম্যাচ" class="headline-link" target="_blank">দুবাইয়ে উত্তাপ ছড়াচ্ছে বাংলাদেশ-ভারত ম্যাচ</a></div></li>
+                  <li><div class="text_align_left"><a href="http://samakal.com/bangladesh/article/18091247/৩-ইউপি’তে-জনসংযোগ-করবেন-স্পিকার" class="headline-link" target="_blank">পীরগঞ্জে ৩ ইউপি&rsquo;তে জনসংযোগ করবেন স্পিকার</a></div></li>
+                  <li><div class="text_align_left"><a href="http://samakal.com/entertainment/article/18091246/ইকবাল-বলতেন-আমার-গান-ছাড়া-অন্য-কারো-কণ্ঠে-লিপ-দিবেন-না" class="headline-link" target="_blank">&#039;জাফর ইকবাল আমার গান ছাড়া অন্য কারো কণ্ঠে লিপ দিতে চাইতেন না&#039;</a></div></li>
+                  <li><div class="text_align_left"><a href="http://samakal.com/sports/article/18091245/হারানোর-লক্ষ্যে-খেলছে-মেয়েরা" class="headline-link" target="_blank">আমিরাতকে বড় ব্যবধানে হারাল মেয়েরা</a></div></li>
+                  <li><div class="text_align_left"><a href="http://samakal.com/whole-country/article/18091244/আওয়ামী-লীগকেই-ভোট-দেবে-শাজাহান-খান" class="headline-link" target="_blank">মানুষ আওয়ামী লীগকেই ভোট দেবে: শাজাহান খান</a></div></li>
+                         </ul>
+     </div>
+
+     <div id="most_viewed" class="tabcontent samakal_nonline">
+       <ul>
+                        <li><div class="text_align_left"><a href="http://samakal.com/politics/article/18091228/নয়-যৌথ-নেতৃত্ব" class="headline-link" target="_blank">একক নয়, যৌথ নেতৃত্ব</a></div></li>
+                <li><div class="text_align_left"><a href="http://samakal.com/sports/article/18091222/বিদায়-শান্তর" class="headline-link" target="_blank">আফগানদের কাছে বড় হার বাংলাদেশের</a></div></li>
+                <li><div class="text_align_left"><a href="http://samakal.com/whole-country/article/18091209/ছাড়া-ক্ষমতায়-থাকার-চেষ্টা-করবেন-না-কাদের-সিদ্দিকী" class="headline-link" target="_blank">ভোট ছাড়া ক্ষমতায় থাকার চেষ্টা করবেন না: কাদের সিদ্দিকী</a></div></li>
+                <li><div class="text_align_left"><a href="http://samakal.com/international/article/18091219/নারী-দেহরক্ষীর-অজানা-কাহিনী" class="headline-link" target="_blank">এক নারী দেহরক্ষীর অজানা কাহিনী</a></div></li>
+                <li><div class="text_align_left"><a href="http://samakal.com/whole-country/article/18091210/দুই-কিশেরীর-লাশের-পরিচয়-মিলেছে" class="headline-link" target="_blank">সেই দুই কিশোরীর লাশের পরিচয় মিলেছে</a></div></li>
+                <li><div class="text_align_left"><a href="http://samakal.com/whole-country/article/18091220/বাঁচাতে-গিয়ে-৬-বছরের-শিশুর-মৃত্যু" class="headline-link" target="_blank">বাবাকে বাঁচাতে গিয়ে ৬ বছরের শিশুর মৃত্যু</a></div></li>
+                <li><div class="text_align_left"><a href="http://samakal.com/bangladesh/article/18091223/১১টার-পর-ফেসবুক-বন্ধ-করে-দেয়া-উচিত-রওশন" class="headline-link" target="_blank">রাত ১১টার পর ফেসবুক বন্ধ করে দেয়া উচিত: রওশন</a></div></li>
+                <li><div class="text_align_left"><a href="http://samakal.com/politics/article/18091227/হাসিনার-নেতৃত্বে-নির্বাচনে-যেতে-চায়-বিএনএ" class="headline-link" target="_blank">শেখ হাসিনার নেতৃত্বে নির্বাচনে যেতে চায় বিএনএ</a></div></li>
+                <li><div class="text_align_left"><a href="http://samakal.com/whole-country/article/18091225/মহড়া-অস্ত্রধারী-ছাত্রলীগ-নেতা-গ্রেফতার" class="headline-link" target="_blank">চট্টগ্রামে মহড়া, অস্ত্রধারী ছাত্রলীগ নেতা গ্রেফতার</a></div></li>
+                <li><div class="text_align_left"><a href="http://samakal.com/whole-country/article/18091232/জন্য" class="headline-link" target="_blank">প্রেমের জন্য...</a></div></li>
+                      </ul> 
+    </div>
+
+    <div id="editors_choice" class="tabcontent samakal_nonline">
+       <ul>
+                        <li><div class="text_align_left"><a href="http://samakal.com/politics/article/18091228/নয়-যৌথ-নেতৃত্ব" class="headline-link" target="_blank">একক নয়, যৌথ নেতৃত্ব</a></div></li>
+                <li><div class="text_align_left"><a href="http://samakal.com/politics/article/18091227/হাসিনার-নেতৃত্বে-নির্বাচনে-যেতে-চায়-বিএনএ" class="headline-link" target="_blank">শেখ হাসিনার নেতৃত্বে নির্বাচনে যেতে চায় বিএনএ</a></div></li>
+                <li><div class="text_align_left"><a href="http://samakal.com/bangladesh/article/18091226/বেড়েছে-কিডনি-বিক্রি" class="headline-link" target="_blank">কালাইয়ে বেড়েছে কিডনি বিক্রি</a></div></li>
+                <li><div class="text_align_left"><a href="http://samakal.com/whole-country/article/18091225/মহড়া-অস্ত্রধারী-ছাত্রলীগ-নেতা-গ্রেফতার" class="headline-link" target="_blank">চট্টগ্রামে মহড়া, অস্ত্রধারী ছাত্রলীগ নেতা গ্রেফতার</a></div></li>
+                <li><div class="text_align_left"><a href="http://samakal.com/bangladesh/article/18091224/অর্থ-জোগাচ্ছে-জঙ্গি-শায়খের-পরিবার" class="headline-link" target="_blank">জেএমবিকে অর্থ জোগাচ্ছে জঙ্গি শায়খের পরিবার</a></div></li>
+                <li><div class="text_align_left"><a href="http://samakal.com/sports/article/18091174/চ্যাম্পিয়নস-লিগ-শুরু-লাল-কার্ডে" class="headline-link" target="_blank">রোনালদোর চ্যাম্পিয়নস লিগ শুরু লাল কার্ডে</a></div></li>
+                <li><div class="text_align_left"><a href="http://samakal.com/whole-country/article/18091172/শব্দে-আপত্তি-মিয়ানমারের-নিবন্ধন-কার্যক্রম-বন্ধ" class="headline-link" target="_blank">বাস্তুচ্যুত শব্দে আপত্তি মিয়ানমারের নিবন্ধন কার্যক্রম বন্ধ</a></div></li>
+                <li><div class="text_align_left"><a href="http://samakal.com/whole-country/article/18091171/পাক-জাম্বুরি-পার্ক" class="headline-link" target="_blank">রক্ষা পাক জাম্বুরি পার্ক</a></div></li>
+                <li><div class="text_align_left"><a href="http://samakal.com/politics/article/18091170/সঙ্গে-থাকার-দৌড়ে-ধর্মভিত্তিক-দলও" class="headline-link" target="_blank">ক্ষমতার সঙ্গে থাকার দৌড়ে ধর্মভিত্তিক দলও</a></div></li>
+                <li><div class="text_align_left"><a href="http://samakal.com/bangladesh/article/18091169/ড্রেজিং-চায়-পরিকল্পনা-কমিশন" class="headline-link" target="_blank">ক্যাপিটাল ড্রেজিং চায় পরিকল্পনা কমিশন</a></div></li>
+                      </ul> 
+    </div>
+
+  </div>
+</div>
+
+<!-- sidebar ad 4 -->
+<!-- end sidebar ad 4 -->
+
+<!-- sidebar as 5 -->
+<!-- end sidebar as 5 -->
+
+<!-- sidebar as 6 -->
+<!-- end sidebar as 6 -->
+
+</div><!--/row-div-right-->
+</div>
+
+</div>
+<div class="footer" style="margin-top: 20px">
+  <div class="footer-contend text-center">
+
+    <div style="width: 50%;height: 125px;text-align: right;padding-top: 20px">
+      <div style="padding-right: 10px;">
+        <img src="assets/images/logo-bottom.png" style="height: 40px;width: 40%;padding: 10px;margin-top: 25px">
+      </div>
+    </div>
+
+    <div style="width: 50%;height: 125px;float:right;margin-top: -125px;" class="footer_texts">
+      <div style="border-left: 2px solid #AEB6BF;padding-left: 10px;text-align: left;">
+        <p>ভারপ্রাপ্ত সম্পাদক : মুস্তাফিজ শফি</p>
+        <p></p>
+        <p>প্রকাশক : এ. কে. আজাদ</p>
+        <p>ফ্যাক্স : ৮৮৭০১৯১, ৮৮৭৭০১৯৬</p>
+        <p>বিজ্ঞাপন : ৮৮৭০১৯০</p>
+        <p>১৩৬ তেজগাঁও শিল্প এলাকা, ঢাকা - ১২০৮</p>
+      </div>
+    </div>
+
+    <p style="font-size: 14px;color:#FF8C00;border-top:1px solid #ccc;margin-top: 10px">© eSamakal 2018. All Rights Reserved.</p>
+  </div>
+</div> 
+</div>
+
+
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "../connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script type="text/javascript">
+  $('.get_archive').click(function(){
+
+    var archive_date = $("input[name=date]").val();
+    var site_url = $(".site_url").val();
+    
+    if(archive_date == ''){
+      alert('Please Select A Valid Date !');
+      window.reload();
+    }
+
+    if(archive_date != null){
+      var request_url = site_url+'/nogor-edition/'+archive_date+'/1';
+      window.location=request_url;
+    }
+
+  });
+
+  document.getElementById("defaultOpen").click();
+</script>
+
+
+
+  <!--##################################
+  ## search result not found ##
+  ###################################-->
+  <script type="text/javascript">
+    $(function() {
+      $('<div class="alert-box message_body">আপনি যে বিষয়টি অনুসন্ধান করছেন তা খুজে পাওয়া যায়নি !! আপনাকে ধন্যবাদ খবর অনুসন্ধান করার জন্য ।</div>')
+      .insertBefore('#message_not_found')
+      .delay(3000)
+      .fadeOut(4000,function() {
+        $(this).remove(); 
+      });
+    });
+
+  </script>
+
+  <input type="hidden" class="site_url" value="http://epaper.samakal.com">
+  <input type="hidden" class="site_url_name" value="Home">
+  <input type="hidden" class="current_url" value="/">
+</body>
+
+<!-- Mirrored from epaper.samakal.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Sep 2018 13:27:46 GMT -->
+</html>
+
